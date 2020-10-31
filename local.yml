@@ -1,0 +1,14 @@
+---
+- hosts: 127.0.0.1
+
+  tasks:
+    - name: Install packages via yum
+      yum:
+        name:
+          - "GNOME Desktop"
+        state: latest
+      become: yes
+
+    - name: Booting into a Graphical Environment
+      command: /usr/bin/systemctl set-default graphical.target
+      become: yes

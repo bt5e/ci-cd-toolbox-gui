@@ -3,7 +3,7 @@
     - base_box_dir: "base-box"
     - base_box_group: "btse"
     - base_box: "ci-cd-toolbox"
-    - base_box_version: "202010.22.0"
+    - base_box_version: "202010.31.0"
     - base_box_provider: "virtualbox"
 
   tasks:
